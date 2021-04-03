@@ -1,0 +1,63 @@
+.b_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/B-dark.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.b_background_preload{
+    background: url("../images/B-bright.png") -9999px -9999px no-repeat;
+}
+
+.lamp-bright{
+	background: url("../images/B-bright.png")  no-repeat;
+    background-size: 100% 100%;
+}
+
+.lamp-dark{
+    background: url("../images/B-dark.png")  no-repeat;
+    background-size: 100% 100%;
+}
+
+.shop {
+    width: 39.5%;
+    height: 35.5%;
+    position: relative;
+    left: 29%;
+    top: 36.5%;
+}
+
+.bird{
+    min-width: 91px;
+    min-height: 71px;
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+    right: -91px;
+    background: url(../images/bird.png) -182px 0px no-repeat;
+}
+
+.bird-Fly {
+    -webkit-animation-name: bird-slow;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-timing-function: step-start;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bird-slow {
+    0% {
+        background-position: -182px 0px;
+    }
+    50% {
+        background-position: 0px 0px;
+    }
+    75% {
+        background-position: -91px 0px;
+    }
+    100% {
+        background-position: -182px 0px;
+    }
+
+}
+
